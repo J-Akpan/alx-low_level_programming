@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /*
- * main - Description for main program
+ * Description: main - Description for main program
  *
- * Description: printing with puts
  * Return: always 0 on success
  */
 

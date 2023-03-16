@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Program to print text
+ * main - print "Programming is like building a multilingual puzzle
  *
  * Description: printing with puts
  * Return: always 0 on sucess

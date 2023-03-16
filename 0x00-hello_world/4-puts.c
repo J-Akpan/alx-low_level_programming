@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - entry point
+ * main - Program to print text
  *
  * Description: printing with puts
  * Return: always 0 on sucess

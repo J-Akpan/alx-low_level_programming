@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * Description: print_alphabet_x10 - print f10 time.
- *
- * Return: asuccessfule
- */
+ * print_alphabet_x10 - program to print alphabet in 10 places
+ * Return: always 0
+*/
 
 void print_alphabet_x10(void)
 {
 	int check = 0;
-	char we;
+	char alphabet;
 
-	while(check++ <= 9)
+	while (check++ <= 9)
 	{
-		for (we = 'a'; we <= 'z'; we++)
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		{
-			_putchar(we);
+			_putchar(alphabet);
 		}
 
 		_putchar('\n');

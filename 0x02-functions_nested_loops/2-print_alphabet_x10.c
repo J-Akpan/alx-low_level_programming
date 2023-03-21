@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * Description: void print_alphabet_x10(void) - 
- * print f10 time the alphabet.
+ * Description: print_alphabet_x10 - print f10 time.
  *
  * Return: asuccessfule
  */

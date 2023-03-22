@@ -3,6 +3,7 @@
 /**
  * Description: print_times_table - print timtable
  *
+ * @n: int type
  * Return: successful
  */
 

@@ -1,17 +1,28 @@
 #include "main.h"
 
 /**
- * Description: more_numbers - to multiply numbers by 10
- * Return: 0 on success
+ * more_numbers - function that checks for uppercase character
+ * Return: 0
  */
 
 void more_numbers(void)
 {
-	int i;
 
-	for (i = 0; i <= 14; i++)
+	int a = 0;
+	int b = 0;
+
+	while (b <= 9)
 	{
-		_putchar(i * 10);
-	}
+		while (a <= 14)
+		{
+			if (a > 9)
+				_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			a++;
+
+		}
 	_putchar('\n');
+	b++;
+	a = 0;
+	}
 }

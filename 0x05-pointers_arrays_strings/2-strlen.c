@@ -2,8 +2,8 @@
 
 /**
  * Description: _strlen - string legth
- *@s: parameter to check
-
+ *
+ * @s: parameter to check
  * Return: 0 on success
  */
 

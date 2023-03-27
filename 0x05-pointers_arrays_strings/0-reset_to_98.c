@@ -4,6 +4,7 @@
 /**
  * Description: reset_to_98 - pointer
  *
+ * @n: parameter to update
  * Return: always 0
  */
 

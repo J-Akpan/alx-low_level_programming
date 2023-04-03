@@ -4,7 +4,7 @@
  * Description: *_memset - fill memory with constant
  * @s: parameter 1
  * @b: parameter 2
- * #n: parameter 3
+ * @n: parameter 3
  *
  * Return: s
  */

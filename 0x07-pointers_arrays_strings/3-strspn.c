@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * Description: int _strspn - function to get the kenght of
- * prefix
- * 
+ * Description: int_strspn - function to get the prefix
+ *
  * @s: param 1
  * @accept: param 2
  *

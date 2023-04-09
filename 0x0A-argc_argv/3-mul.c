@@ -20,12 +20,17 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
+	else if (argc == 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			int y = strtol(argv[i], NULL, 10);
-			int z = strtol(argv[1], NULL, 10);
+			int z = strtol(argv[i], NULL, 10);
 
 			multiply = y * z;
 		}

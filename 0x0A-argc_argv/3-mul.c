@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		int y = strtol(argv[i], NULL, 10);
-
 		multiply = multiply * y;
 	}
 	printf("%d\n", multiply);

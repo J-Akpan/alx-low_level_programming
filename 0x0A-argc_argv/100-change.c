@@ -41,5 +41,5 @@ int main(int argc, char *argv[])
 		min_coin += 1;
 	}
 	printf("%d\n", min_coin);
-	return 0;
+	return (0);
 }

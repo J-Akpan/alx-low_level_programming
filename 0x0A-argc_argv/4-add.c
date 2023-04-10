@@ -15,19 +15,21 @@
 
 int main(int argc, char *argv[])
 {
-	int  i, x, sum;
+	int  i, x, j, sum=0;
 
 	for (i = 1; i < argc; i++)
 	{
-		x = strtol(argv[i], NULL, 10);
-
-		if (!x)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			x = isdigit(argv[i][j]);
+
+			if (!x)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else if (x)
-			sum += x;
+		sum += strtol(argv[i], NULL, 10);
 	}
 	printf("%d\n", sum);
 	return (0);

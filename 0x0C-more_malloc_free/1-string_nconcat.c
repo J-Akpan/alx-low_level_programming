@@ -15,37 +15,37 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s_out;
-	unsigned int d1, d2, dout, i;
+	char *s;
 
-	if (s1 == NULL)
-		s1 = "";
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	if (s2 == NULL)
-		s2 = "";
+	while (s1 && s1[len1])
+		len1++;
 
-	for (d1 = 0; s1[d1] != '\0'; d1++)
-		;
-	for (d2 = 0; s2[d2] != '\0'; d2++)
-		;
+	while (s2 && s2[len2])
+		len2++;
 
-	if (n > d2)
-		n = d2;
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
 
-	dout = d1 + n;
-
-	s_out = malloc(dout + 1);
-
-	if (s_out == NULL)
+	if (!s)
 		return (NULL);
 
-	for (i = 0; i < dout; i++)
-		if (i < d1)
-			s_out[i] = s1[1];
-		else
-			s_out[i] = s2[i - d1];
+	while (i < len1)
+	{
+		s[i] = s1[i];
+		i++;
+	}
 
-	s_out[i] = '\0';
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
 
-	return (s_out);
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
+
+	return (s);
 }

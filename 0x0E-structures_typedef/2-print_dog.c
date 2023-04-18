@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdio.h>
 
 /**
  * print_dog - functikon to rint dog structure
@@ -10,13 +11,14 @@
 
 void print_dog(struct dog *d)
 {
-	/*stm to declear nil*/
+	/*stmt to declare nil*/
 	char *nil = "(nil)";
 
 	/*check if d is NULL*/
 	if (d == NULL)
 		return;
-	/*print the members of the structure*/
+
+	/*check to see if memeber is nil, else print member*/
 	printf("Name:%s\n", (d->name) ? d->name : nil);
 	printf("Age: %f\n", d->age);
 	pritf("Owner: %s\n", (d->owner) ? d->owner : nil);

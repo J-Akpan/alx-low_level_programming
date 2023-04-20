@@ -12,7 +12,7 @@
  * Return: 0 on success
  */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int__attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
@@ -39,7 +39,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(op)(num1, num2));
+	print("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
 }

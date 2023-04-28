@@ -1,10 +1,12 @@
 #include "lists.h"
 
 /**
- * *add_end
- * 
+ * Description: *add_node_end - function to add node at the end of list
+ *
  * @head: pointer to the list
  * @str: string for the newcode
+ *
+ * Return: address of mew element
  */
 
 

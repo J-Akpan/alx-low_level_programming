@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * Description: main - function that print the number of argument passed into it
+ * Description: main - function that print the number of argument 
  *
  * @argc: parameter 1
  * @argv: parameter 2
@@ -13,6 +13,6 @@
 int main(int argc, char *argv[])
 {
 	(void)argv;
-	printf("%d\n",argc);
+	printf("%d\n", argc);
 	return (0);
 }

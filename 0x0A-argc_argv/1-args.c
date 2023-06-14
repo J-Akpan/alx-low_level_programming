@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * Description: main - function that print the number of argument 
+ * Description: main - function that print the number of argument
  *
  * @argc: parameter 1
  * @argv: parameter 2

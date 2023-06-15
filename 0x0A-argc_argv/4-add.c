@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argc == 0 || argc < 2)
+		if (argc == 0 || argc < 1)
 		{
 			return (0);
 		}

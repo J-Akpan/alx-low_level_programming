@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			return (0);
 		}
-		else if (isalpha(*argv[i]))
+		else if (!isdigit(*argv[i]))
 		{
 			printf("Error\n");
 			return (1);

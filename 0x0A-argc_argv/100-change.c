@@ -13,25 +13,30 @@
 
 int main(int argc, char *argv[])
 {
-	int i, change, ans;
+	int num, i, ans;
 	int coins[] = {25, 10, 5, 2, 1};
-	
-	change = atoi(argv[1]);
-	if (argc < 2|| argc >2)
+
+	if (argc < 2 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (change < 0)
+
+	num = atoi(argv[1]);
+	ans = 0;
+	if (num < 0)
 	{
 		printf("0\n");
 	}
-	ans = 0;
-	
 
-	for (i = 0; i < 5 && change > 0; i++)
+	for (i = 0; i < 5 && num >= 0; i++)
 	{
-		while (change >= coins[i])
+		while (num >= coins[i])
 		{
 			ans++;
-			change -= coins[
+			num -= coins[i];
+		}
+	}
+	printf("%d\n", ans);
+	return (0);
+}
